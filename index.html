@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>N Sai Harshitha — Portfolio</title>
+    <meta name="description"
+        content="Portfolio of N Sai Harshitha — AI/ML student, projects in web apps and computer vision" />
+    <style>
+        :root {
+            --primary: #0a58ca;
+            --bg: #f6f9ff;
+            --card: #ffffff;
+            --muted: #6b7280
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+            margin: 0;
+            background: var(--bg);
+            color: #0b1220
+        }
+
+        header {
+            background: linear-gradient(90deg, var(--primary), #0c76e6);
+            color: white;
+            padding: 40px 20px;
+            text-align: center
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 30px
+        }
+
+        header p {
+            margin: 6px 0 0;
+            opacity: 0.95
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 28px auto;
+            padding: 0 18px;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px
+        }
+
+        .card {
+            background: var(--card);
+            padding: 18px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(12, 86, 202, 0.06)
+        }
+
+        .left .contact a {
+            display: block;
+            color: var(--primary);
+            text-decoration: none;
+            margin-bottom: 8px;
+            font-weight: 600
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px
+        }
+
+        .tech {
+            background: #f1f6ff;
+            padding: 6px 8px;
+            border-radius: 8px;
+            border: 1px solid rgba(10, 86, 202, 0.06);
+            font-size: 13px
+        }
+
+        .projects .project {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 14px
+        }
+
+        .thumb {
+            width: 110px;
+            height: 70px;
+            background: #eef6ff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--muted);
+            font-size: 12px
+        }
+
+        .project h4 {
+            margin: 0 0 6px
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            margin: 28px 0
+        }
+
+        @media(max-width:880px) {
+            .container {
+                grid-template-columns: 1fr
+            }
+
+            .left {
+                order: 2
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>N Sai Harshitha</h1>
+        <p>AI & ML Student • Computer Vision • Web Applications • Cloud (AWS basic)</p>
+    </header>
+
+    <div class="container">
+        <div class="left">
+            <div class="card contact">
+                <h3>Contact</h3>
+                <a href="mailto:saiharshithanallagatla@gmail.com">saiharshithanallagatla@gmail.com</a>
+                <a href="tel:+916304876608">+91 6304 876 608</a>
+                <a href="https://www.linkedin.com/in/nallagatla-saiharshitha-9ab425352/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Saiharshitha9" target="_blank">GitHub</a>
+            </div>
+
+            <div class="card" style="margin-top:14px">
+                <h3>Tech Stack</h3>
+                <div class="tech-list">
+                    <div class="tech">Python</div>
+                    <div class="tech">Java</div>
+                    <div class="tech">TensorFlow</div>
+                    <div class="tech">OpenCV</div>
+                    <div class="tech">AWS (basic)</div>
+                    <div class="tech">AI/ML</div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top:14px">
+                <h3>Achievements & Events</h3>
+                <ul>
+                    <li>Participant — Synapse National Hackathon 2024</li>
+                    <li>Participant — AWS student events (cloud workshops & hackathons)</li>
+                </ul>
+            </div>
+
+            <div class="card" style="margin-top:14px">
+                <h3>Certifications (Coursera / IBM)</h3>
+                <ul>
+                    <li>Introduction to Artificial Intelligence — University of Colorado Boulder</li>
+                    <li>Basic Robotic Behaviors and Odometry — UC Irvine</li>
+                    <li>Predictive Modeling, Model Fitting, Regression — DeepLearning.AI</li>
+                    <li>Probability & Statistics for ML & Data Science — IBM</li>
+                    <li>Introduction to Hardware & Operating Systems — BM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="card">
+                <h2>About</h2>
+                <p>Third-year B.Tech AI & ML student building web and vision systems that solve practical problems. I
+                    enjoy end-to-end development — from data collection and model training to building user-facing web
+                    apps and basic cloud deployment.</p>
+            </div>
+
+            <div class="card projects" style="margin-top:14px">
+                <h2>Projects</h2>
+
+                <div class="project">
+                    <div class="thumb">Food<br />Web App</div>
+                    <div class="meta">
+                        <h4>Food Management Web Application</h4>
+                        <p>Full-stack web app to manage food donations & distribution. Features user roles for donors
+                            and receivers, item listing, and location-based matching. Built using Python backend,
+                            frontend (HTML/CSS/JS), and basic AWS deployment for hosting and storage.</p>
+                        <p><strong>Tech:</strong> Python, Java (backend modules), HTML/CSS/JS, AWS (S3, EC2 basic),
+                            SQLite/MySQL</p>
+                    </div>
+                </div>
+
+</html>
